@@ -1,0 +1,31 @@
+9:54 AM 7/3/2026
+axis=1 # changes occurs column
+axis=0 #changes occurs row
+inplace = true #changes occurs permanently
+
+3:29 PM 7/4/2026
+types of ML : supervised(regression :linear , non linear) ,unsupervised(cluster),reinforcement
+
+2:19 PM 7/7/2026
+select * from emp order by salary desc limit 5;
+ use empinfo;
+select * from professinfo order by age;
+ alter table professdep add sub varchar(20);
+ select * from emp where salary between 2000 and 4000;
+create table emp(empid int,name varchar(20),salary int);
+ insert into emp(empid,name,salary)values(3,'pragati',3000);
+ select * from emp where name in('shweta','hiya');
+ select * from emp where name not in('shweta','hiya');
+ select * from emp where name like('%a');
+ select * from emp where name like('___a');
+ select avg(salary) from emp;
+select min(salary) from emp;
+select max(salary) from emp;
+ select depname,avg(salary) from professdep group by depname;
+ select * from professinfo union select * from professdep;
+ select * from professinfo union all select * from professdep;
+select * from professinfo intersect select * from professdep;
+ update professinfo set depid=5 where professid=5;
+  select professinfo.name,professdep.depname from professinfo join professdep on professinfo.depid=professdep.depid;
+alter table professinfo add (depid int);
+select * from professinfo where depid>(select avg(depid) from empinfo);#sub queries
